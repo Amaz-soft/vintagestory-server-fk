@@ -25,12 +25,12 @@ RUN useradd -u $UID -U -m -s /bin/false vintagestory && usermod -G users vintage
 EXPOSE 42420
 
 # Healthcheck
-HEALTHCHECK --start-period=1m --interval=5s CMD nc -z  127.0.0.1 $SERVER_PORT
+HEALTHCHECK --start-period=2m --interval=5s CMD nc -z  127.0.0.1 $SERVER_PORT
 
 VOLUME ["/data/server-file"]
 
+COPY mods /data/Mods
 COPY serverconfig.json /data/default-serverconfig.json
-COPY /mods /data/server-file/Mods
 
 COPY entry.sh /data/scripts/entry.sh
 CMD ["bash", "/data/scripts/entry.sh"]
