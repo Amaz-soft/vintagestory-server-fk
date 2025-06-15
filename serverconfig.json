@@ -163,7 +163,6 @@
         "areamodify",
         "setspawn",
         "controlserver",
-        "tp",
         "time",
         "grantrevoke",
         "root",
