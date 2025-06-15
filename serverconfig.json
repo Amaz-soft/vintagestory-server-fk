@@ -137,7 +137,7 @@
     },
     {
       "Code": "suplayer",
-      "PrivilegeLevel": 0,
+      "PrivilegeLevel": 999999,
       "Name": "Survival Player",
       "Description": "Can use/place/break blocks in unprotected areas (priv level 0), create/manage player groups and chat. Can claim an area of up to 8 chunks.",
       "DefaultSpawn": null,
